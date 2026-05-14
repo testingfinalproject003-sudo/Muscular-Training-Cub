@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "464237838239",
+    "project_id": "muscular-training-club",
+    "storage_bucket": "muscular-training-club.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464237838239:android:500b0143b4aa514f87c7aa",
+        "android_client_info": {
+          "package_name": "com.example.muscular_training_club"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy5o1Zsaa7vAcUmKYUCnE4oRaHVLsFv3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
