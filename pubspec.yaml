@@ -1,0 +1,82 @@
+name: muscular_training_club
+description: "A premium fitness app with AI coaching"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+ # Firebase
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.0
+  cloud_firestore: ^4.15.0
+  firebase_storage: ^11.6.0
+  
+  # State Management
+  provider: ^6.1.2
+  
+  # UI & Design
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  
+  # Charts
+  fl_chart: ^0.67.0
+  
+  # Animations
+  lottie: ^3.1.0
+  
+  # Navigation
+  go_router: ^13.2.0
+  
+  # Network
+  http: ^1.2.0
+  dio: ^5.4.1
+  
+  # Storage
+  shared_preferences: ^2.2.3
+  
+  # Utils
+  intl: ^0.19.0
+  uuid: ^4.3.3
+  
+  # Image
+  image_picker: ^1.0.7
+  cached_network_image: ^3.3.1
+  flutter_markdown: ^0.7.7+1
+  flutter_launcher_icons: ^0.14.4
+  
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter_launcher_icons:
+
+  android: true
+  ios: true
+  image_path: assets/icons/mtc_logo.jpeg
+  adaptive_icon_background: assets/icons/bg.png
+  adaptive_icon_foreground: assets/icons/fg.png
+flutter:
+  uses-material-design: true
+
+assets:
+    - assets/images/
+    - assets/animations/
+    - assets/icons/mtc_logo.jpeg
+    - assets/icons/bg.png
+    - assets/icons/fg.png
+    - assets/screenshots/splash.jpeg 
+    - assets/screenshots/signup.jpeg 
+    - assets/screenshots/login.jpeg
+    - assets/screenshots/home.jpeg
+    - assets/screenshots/home2.jpeg
+    - assets/screenshots/exerciselibrary.jpeg
+    - assets/screenshots/progress.jpeg
+    - assets/screenshots/profile.jpeg
