@@ -89,25 +89,140 @@ A premium AI-powered fitness application built with Flutter and Firebase. The ap
  > Cloud synchronization through Firestore
 
  ## Project Structure 
- # Screen Name	
-Login	
-Home	
-Home Tab
-Workout Planner	
-Active Workout	
-Exercise Library	
-Workout Generator	
-Exercise Detail	
-AI Coach	
-AI Diet	
-Progress	
-Weight Log	
-Workout 
-Profile	
-Edit Profile	
 
 ## 📦 Package Usage 
+📦 muscles_training_club
+ 
+├── 📁 lib/
+│   │📁 core/
+│   │   ├── 📁 constants/(app_theme.dart,app_constants.dart,app_text_styles.dart,app_colors.dart)
+│   │   ├── 📁 utils/(bmi_calculator.dart,calorie_calculator.dart,validators.dart,date_formatter.dart
 
+
+│   │   └── 📁 widgets/
+│   │       ├── glass_card.dart
+│   │       ├── gradient_button.dart
+│   │       ├── animated_background.dart
+│   │       ├── stat_card.dart
+│   │       └── circular_timer.dart
+│   │
+│   ├── 📁 models/
+│   │   ├── user_model.dart
+│   │   ├── workout_plan_model.dart
+│   │   ├── workout_log_model.dart
+│   │   ├── exercise_model.dart
+│   │   ├── ai_plan_model.dart
+│   │   ├── water_log_model.dart
+│   │   └── weight_log_model.dart
+│   │
+│   ├── 📁 services/
+│   │   ├── ai_service.dart
+│   │   ├── auth_service.dart
+│   │   ├── firestore_service.dart
+│   │   ├── storage_service.dart
+│   │   
+│   │
+│   ├── 📁 providers/
+│   │   ├── auth_provider.dart
+│   │   ├── workout_provider.dart
+│   │   ├── plan_provider.dart
+│   │   ├── progress_provider.dart
+│   │   └── water_provider.dart
+│   │
+│   ├── 📁 screens/
+│   │   │
+│   │   ├── 📁 auth/
+│   │   │   └── login_screen.dart
+│   │   │
+│   │   ├── 📁 home/
+│   │   │   ├── home_screen.dart
+│   │   │   ├── home_tab.dart
+│   │   │   ├── workout_planner_screen.dart
+│   │   │   └── 📁 widgets/
+│   │   │       ├── daily_tip_card.dart
+│   │   │       ├── plan_card.dart
+│   │   │       ├── weekly_calendar.dart
+│   │   │       └── quick_actions_row.dart
+│   │   │
+│   │   ├── 📁 workout/
+│   │   │   ├── active_workout_screen.dart
+│   │   │   ├── exercise_library_screen.dart
+│   │   │   ├── workout_generator_screen.dart
+│   │   │   ├── exercise_detail_screen.dart
+│   │   │   └── 📁 widgets/
+│   │   │       ├── exercise_tile.dart
+│   │   │       ├── rest_timer.dart
+│   │   │       ├── set_counter.dart
+│   │   │       ├── rep_counter.dart
+│   │   │       └── workout_complete_sheet.dart
+│   │   │
+│   │   ├── 📁 ai/
+│   │   │   ├── ai_coach_screen.dart
+│   │   │   ├── diet_screen.dart
+│   │   │   └── 📁 widgets/
+│   │   │       ├── chat_bubble.dart
+│   │   │       ├── quick_prompt_chip.dart
+│   │   │       └── markdown_message.dart
+│   │   │
+│   │   ├── 📁 progress/
+│   │   │   ├── progress_screen.dart
+│   │   │   ├── weight_log_screen.dart
+│   │   │   ├── workout_history_screen.dart
+│   │   │   └── 📁 widgets/
+│   │   │       ├── weight_chart.dart
+│   │   │       ├── workout_bar_chart.dart
+│   │   │       ├── stat_summary.dart
+│   │   │       └── pr_badge.dart
+│   │   │
+│   │   └── 📁 profile/
+│   │       ├── profile_screen.dart
+│   │       ├── edit_profile_screen.dart
+│   │       └── 📁 widgets/
+│   │           ├── bmi_gauge.dart
+│   │           ├── goal_selector.dart
+│   │           └── stat_row.dart
+│   │
+│   ├── 📁 routes/
+│   │   └── app_router.dart
+│   │
+│   ├── firebase_options.dart
+│   └── main.dart
+│
+├── 📁 assets/
+│   ├── 📁 images/
+│   │   ├── logo.png
+│   │   ├── onboarding_1.png
+│   │   ├── onboarding_2.png
+│   │   └── onboarding_3.png
+│   │
+│   ├── 📁 icons/
+│   │   ├── chest_icon.svg
+│   │   ├── back_icon.svg
+│   │   ├── legs_icon.svg
+│   │   ├── arms_icon.svg
+│   │   ├── shoulders_icon.svg
+│   │   ├── core_icon.svg
+│   │   └── cardio_icon.svg
+│   │
+│   └── 📁 animations/
+│       ├── confetti.json
+│       └── trophy.json
+│
+├── 📁 test/
+│   ├── unit/
+│   │   ├── bmi_calculator_test.dart
+│   │   └── calorie_calculator_test.dart
+│   │
+│   └── widget/
+│       ├── login_screen_test.dart
+│       └── home_screen_test.dart
+│
+├── pubspec.yaml
+├── pubspec.lock
+├── analysis_options.yaml
+├── .gitignore
+├── .env
+└── README.md
 # Firebase
   firebase_core: ^2.27.0
   firebase_auth: ^4.17.0
