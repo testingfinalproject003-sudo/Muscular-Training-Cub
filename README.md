@@ -89,56 +89,22 @@ A premium AI-powered fitness application built with Flutter and Firebase. The ap
  > Cloud synchronization through Firestore
 
  ## Project Structure 
-
- 📦 muscles_training_club
- 
-📦 muscular_training_club/
-│
-├── 📁 lib/
-│   │
-│   ├── 📁 core/
-│   │   ├── constants/
-│   │   │   └── app_colors.dart          ← Colors
-│   │   │
-│   │   └── widgets/
-│   │       ├── animated_background.dart  ← ← ← BUBBLES YAHAN HAIN
-│   │       ├── glass_card.dart           ← Glass UI
-│   │       └── gradient_button.dart      ← Buttons
-│   │
-│   ├── 📁 models/
-│   │   └── user_model.dart               ← User data
-│   │
-│   ├── 📁 services/
-│   │   ├── ai_service.dart               ← OpenRouter API
-│   │   └── auth_service.dart             ← Firebase Auth
-│   │
-│   ├── 📁 providers/
-│   │   └── auth_provider.dart            ← Login state
-│   │
-│   ├── 📁 screens/
-│   │   │
-│   │   ├── auth/
-│   │   │   └── login_screen.dart         ← Login
-│   │   │
-│   │   ├── home/
-│   │   │   ├── home_screen.dart          ← Bottom nav
-│   │   │   └── home_tab.dart             ← Dashboard
-│   │   │
-│   │   ├── workout/
-│   │   │   └── active_workout_screen.dart ← Timer + bubbles
-│   │   │
-│   │   ├── ai/
-│   │   │   └── ai_coach_screen.dart      ← Chat
-│   │   │
-│   │   └── profile/
-│   │       └── profile_screen.dart       ← User info
-│   │
-│   └── main.dart                         ← App start
-│
-├── 📁 assets/
-│   └── images/                           ← App images
-│
-└── pubspec.yaml                            ← Packages
+ # Screen Name	
+Login	
+Home	
+Home Tab
+Workout Planner	
+Active Workout	
+Exercise Library	
+Workout Generator	
+Exercise Detail	
+AI Coach	
+AI Diet	
+Progress	
+Weight Log	
+Workout 
+Profile	
+Edit Profile	
 
 ## 📦 Package Usage 
 
