@@ -1,4 +1,4 @@
-## 💪 Muscles Training Club
+## 💪 Muscular Training Club
 
 A premium AI-powered fitness application built with Flutter and Firebase. The app combines intelligent workout planning, real-time exercise tracking, and AI coaching into a single platform with a stunning glassmorphism UI.
 
@@ -90,162 +90,55 @@ A premium AI-powered fitness application built with Flutter and Firebase. The ap
 
  ## Project Structure 
 
- app_structure = """📦 muscles_training_club/
-│
-├── 📁 android/
-│   ├── app/
-│   │   ├── build.gradle
-│   │   └── src/
-│   ├── build.gradle
-│   └── settings.gradle
-│
-├── 📁 ios/
-│   ├── Runner/
-│   │   ├── AppDelegate.swift
-│   │   ├── Info.plist
-│   │   └── Assets.xcassets/
-│   ├── Podfile
-│   └── Runner.xcworkspace/
+ 📦 muscles_training_club
+ 
+📦 muscular_training_club/
 │
 ├── 📁 lib/
 │   │
 │   ├── 📁 core/
-│   │   ├── 📁 constants/
-│   │   │   ├── app_colors.dart
-│   │   │   ├── app_text_styles.dart
-│   │   │   ├── app_constants.dart
-│   │   │   └── app_theme.dart
+│   │   ├── constants/
+│   │   │   └── app_colors.dart          ← Colors
 │   │   │
-│   │   ├── 📁 utils/
-│   │   │   ├── bmi_calculator.dart
-│   │   │   ├── calorie_calculator.dart
-│   │   │   ├── validators.dart
-│   │   │   └── date_formatter.dart
-│   │   │
-│   │   └── 📁 widgets/
-│   │       ├── glass_card.dart
-│   │       ├── gradient_button.dart
-│   │       ├── animated_background.dart
-│   │       ├── stat_card.dart
-│   │       └── circular_timer.dart
+│   │   └── widgets/
+│   │       ├── animated_background.dart  ← ← ← BUBBLES YAHAN HAIN
+│   │       ├── glass_card.dart           ← Glass UI
+│   │       └── gradient_button.dart      ← Buttons
 │   │
 │   ├── 📁 models/
-│   │   ├── user_model.dart
-│   │   ├── workout_plan_model.dart
-│   │   ├── workout_log_model.dart
-│   │   ├── exercise_model.dart
-│   │   ├── ai_plan_model.dart
-│   │   ├── water_log_model.dart
-│   │   └── weight_log_model.dart
+│   │   └── user_model.dart               ← User data
 │   │
 │   ├── 📁 services/
-│   │   ├── ai_service.dart
-│   │   ├── auth_service.dart
-│   │   ├── firestore_service.dart
-│   │   ├── storage_service.dart
-│   │   
+│   │   ├── ai_service.dart               ← OpenRouter API
+│   │   └── auth_service.dart             ← Firebase Auth
 │   │
 │   ├── 📁 providers/
-│   │   ├── auth_provider.dart
-│   │   ├── workout_provider.dart
-│   │   ├── plan_provider.dart
-│   │   ├── progress_provider.dart
-│   │   └── water_provider.dart
+│   │   └── auth_provider.dart            ← Login state
 │   │
 │   ├── 📁 screens/
 │   │   │
-│   │   ├── 📁 auth/
-│   │   │   └── login_screen.dart
+│   │   ├── auth/
+│   │   │   └── login_screen.dart         ← Login
 │   │   │
-│   │   ├── 📁 home/
-│   │   │   ├── home_screen.dart
-│   │   │   ├── home_tab.dart
-│   │   │   ├── workout_planner_screen.dart
-│   │   │   └── 📁 widgets/
-│   │   │       ├── daily_tip_card.dart
-│   │   │       ├── plan_card.dart
-│   │   │       ├── weekly_calendar.dart
-│   │   │       └── quick_actions_row.dart
+│   │   ├── home/
+│   │   │   ├── home_screen.dart          ← Bottom nav
+│   │   │   └── home_tab.dart             ← Dashboard
 │   │   │
-│   │   ├── 📁 workout/
-│   │   │   ├── active_workout_screen.dart
-│   │   │   ├── exercise_library_screen.dart
-│   │   │   ├── workout_generator_screen.dart
-│   │   │   ├── exercise_detail_screen.dart
-│   │   │   └── 📁 widgets/
-│   │   │       ├── exercise_tile.dart
-│   │   │       ├── rest_timer.dart
-│   │   │       ├── set_counter.dart
-│   │   │       ├── rep_counter.dart
-│   │   │       └── workout_complete_sheet.dart
+│   │   ├── workout/
+│   │   │   └── active_workout_screen.dart ← Timer + bubbles
 │   │   │
-│   │   ├── 📁 ai/
-│   │   │   ├── ai_coach_screen.dart
-│   │   │   ├── diet_screen.dart
-│   │   │   └── 📁 widgets/
-│   │   │       ├── chat_bubble.dart
-│   │   │       ├── quick_prompt_chip.dart
-│   │   │       └── markdown_message.dart
+│   │   ├── ai/
+│   │   │   └── ai_coach_screen.dart      ← Chat
 │   │   │
-│   │   ├── 📁 progress/
-│   │   │   ├── progress_screen.dart
-│   │   │   ├── weight_log_screen.dart
-│   │   │   ├── workout_history_screen.dart
-│   │   │   └── 📁 widgets/
-│   │   │       ├── weight_chart.dart
-│   │   │       ├── workout_bar_chart.dart
-│   │   │       ├── stat_summary.dart
-│   │   │       └── pr_badge.dart
-│   │   │
-│   │   └── 📁 profile/
-│   │       ├── profile_screen.dart
-│   │       ├── edit_profile_screen.dart
-│   │       └── 📁 widgets/
-│   │           ├── bmi_gauge.dart
-│   │           ├── goal_selector.dart
-│   │           └── stat_row.dart
+│   │   └── profile/
+│   │       └── profile_screen.dart       ← User info
 │   │
-│   ├── 📁 routes/
-│   │   └── app_router.dart
-│   │
-│   ├── firebase_options.dart
-│   └── main.dart
+│   └── main.dart                         ← App start
 │
 ├── 📁 assets/
-│   ├── 📁 images/
-│   │   ├── logo.png
-│   │   ├── onboarding_1.png
-│   │   ├── onboarding_2.png
-│   │   └── onboarding_3.png
-│   │
-│   ├── 📁 icons/
-│   │   ├── chest_icon.svg
-│   │   ├── back_icon.svg
-│   │   ├── legs_icon.svg
-│   │   ├── arms_icon.svg
-│   │   ├── shoulders_icon.svg
-│   │   ├── core_icon.svg
-│   │   └── cardio_icon.svg
-│   │
-│   └── 📁 animations/
-│       ├── confetti.json
-│       └── trophy.json
+│   └── images/                           ← App images
 │
-├── 📁 test/
-│   ├── unit/
-│   │   ├── bmi_calculator_test.dart
-│   │   └── calorie_calculator_test.dart
-│   │
-│   └── widget/
-│       ├── login_screen_test.dart
-│       └── home_screen_test.dart
-│
-├── pubspec.yaml
-├── pubspec.lock
-├── analysis_options.yaml
-├── .gitignore
-├── .env
-└── README.md
+└── pubspec.yaml                            ← Packages
 
 ## 📦 Package Usage 
 
