@@ -7,7 +7,7 @@ class AppConstants {
   // API
   static const String openRouterBaseUrl = 'https://openrouter.ai/api/v1/chat/completions';
   static const String openRouterModel = "openai/gpt-4o-mini";
-   static const String openRouterApiKey = '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';
+   static const String openRouterApiKey = '';
   // Shared Preferences Keys
   static const String prefUserData = 'user_data';
   static const String prefIsLoggedIn = 'is_logged_in';

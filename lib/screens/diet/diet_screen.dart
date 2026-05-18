@@ -25,7 +25,7 @@ class _DietScreenState extends State<DietScreen> {
     setState(() => _isLoading = true);
 
     final authProvider = context.read<AuthProvider>();
-    final aiService = AIService(apiKey: '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');
+    final aiService = AIService(apiKey: '');
 
     try {
       final plan = await aiService.getDietSuggestions(authProvider.user!);
