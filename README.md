@@ -235,41 +235,22 @@ A premium AI-powered fitness application built with Flutter and Firebase. The ap
  ```
 ## 📦 Package Usage 
 
-# Firebase
-  - firebase_core: ^2.27.0
-  - firebase_auth: ^4.17.0
-  - cloud_firestore: ^4.15.0
-  - firebase_storage: ^11.6.0
-  
-  # State Management
-  - provider: ^6.1.2
-  
-  # UI & Design
-  - google_fonts: ^6.2.1
-  - flutter_animate: ^4.5.0
-  - shimmer: ^3.0.0
-  
-  # Charts
-  - fl_chart: ^0.67.0
-  
-  # Animations
-  - lottie: ^3.1.0
-  
-  # Navigation
-  - go_router: ^13.2.0
-  
-  # Network
-  - http: ^1.2.0
-  -  dio: ^5.4.1
-  
-  # Storage
-  - shared_preferences: ^2.2.3
-  
-  # Utils
-  - intl: ^0.19.0
-  - uuid: ^4.3.3
-  
-  # Image
+ - firebase_core: ^2.27.0
+ - firebase_auth: ^4.17.0
+ - cloud_firestore: ^4.15.0
+ - firebase_storage: ^11.6.0
+ - provider: ^6.1.2
+ - google_fonts: ^6.2.1
+ - flutter_animate: ^4.5.0
+ - shimmer: ^3.0.0
+ - fl_chart: ^0.67.0 
+ - lottie: ^3.1.0
+ - go_router: ^13.2.0
+ - http: ^1.2.0
+ -  dio: ^5.4.1
+ - shared_preferences: ^2.2.3
+ - intl: ^0.19.0
+ - uuid: ^4.3.3
  - image_picker: ^1.0.7
  - cached_network_image: ^3.3.1
  - flutter_markdown: ^0.7.7+1
